@@ -1,11 +1,16 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
+
+import student from "../assets/img/icons/student.svg";
+import stopWatch from "../assets/img/icons/stopwatch.svg";
+import award  from "../assets/img/icons/award.svg";
+import price  from "../assets/img/icons/prices.svg";
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp2 from "../assets/img/color-sharp2.png"
 
 export const Skills = () => {
   const responsive = {
@@ -29,36 +34,38 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="skill" id="skills" >
         <div className="container">
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Nosso diferencial</h2>
+                        <h2>Nosso Diferencial</h2>
                         <p>Motivos para você escolher a blessed!</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                        <Carousel responsive={responsive} infinite={true} 
+                         autoPlay={true}
+                         autoPlaySpeed={4500}
+                        className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={award} alt="Image" />
+                                <h5>Alta qualidade</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={stopWatch} alt="Image" />
+                                <h5>Prazos flexíveis</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={price} alt="Image" />
+                                <h5>Os melhores preços!</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={student} alt="Image" />
+                                <h5>Feito por estudantes</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }

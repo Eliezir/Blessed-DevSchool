@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
-      <Skills />
+      
       <Projects />
       <Contact />
       <Footer />

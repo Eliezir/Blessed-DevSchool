@@ -1,15 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import colorSharp2 from "../assets/img/color-sharp2.png";
+
 import projImg1 from "../assets/img/ArtesCinema/ejmSite.png";
 import projImg2 from "../assets/img/ArtesCinema/CinemaSite.png";
 import projImg3 from "../assets/img/ArtesCinema/PratagySite.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 
-import Modelagem1 from "../assets/img/ArtesCaio/modelagem01.png"
-import Modelagem2 from "../assets/img/ArtesCaio/modelagem02.png"
+import Modelagem1 from "../assets/img/ArtesCaio/modelagem02.png"
+import Modelagem2 from "../assets/img/ArtesCaio/modelagem01.png"
 import Modelagem3 from "../assets/img/ArtesCaio/modelagem03.png"
 import Modelagem4 from "../assets/img/ArtesCaio/modelagem04.png"
-import Modelagem5 from "../assets/img/ArtesCaio/modelagem05.jpeg"
+import Modelagem5 from "../assets/img/ArtesCaio/modelagem05.png"
 import Modelagem6 from "../assets/img/ArtesCaio/modelagem06.png"
 
 
@@ -27,31 +28,32 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "EJM publicidades",
+      description: "Site desenvolvido para uma empresa de publicidades",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Cinema Blessed",
+      description: "Aplicação WEB sobre cinema",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Pratagy",
+      description: "Aplicação web desenvolvida para o controle interno do RH",
       imgUrl: projImg3,
     }
   ];
 
   const Modelagem = [
     {
-      title: "Japanese Street",
-      description: "Modelagem de 3D paisagem",
+      title: "Sala de estar",
+      description: "Modelagem 3D de uma sala de estar",
       imgUrl: Modelagem1,
     },
     {
-      title: "Sala de estar",
-      description: "Modelagem 3D de uma sala de estar",
+     
+      title: "Japanese Street",
+      description: "Modelagem de 3D paisagem",
       imgUrl: Modelagem2,
     },
     {
@@ -65,8 +67,8 @@ export const Projects = () => {
       imgUrl: Modelagem4,
     },
     {
-      title: "PokeBola",
-      description: "Modelagem 3D de uma pokebola do anime Pokemon",
+      title: "Japanese Sign",
+      description: "Letreiro neon",
       imgUrl: Modelagem5,
     },
     {

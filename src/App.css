@@ -95,7 +95,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 15%;
+    width: 156px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -233,11 +233,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 260px 0 150px 0;
+  background-image: url('./assets/img/bg-teste.jpeg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  user-select: none;
 }
 .banner .tagline {
   font-weight: 700;
@@ -258,14 +259,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #cacaca;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
-  color: #fff;
+.Bannerconnect {
+  color: #f8f8f8;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -273,6 +274,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
+
+
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
@@ -281,21 +284,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner button:hover svg {
   margin-left: 25px;
+  color: #f400f8;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -308,9 +299,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+
 }
 .skill-bx {
-  background: #151515;
+  background: #3c1e5aa9;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -326,6 +318,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    width: 100%;
 }
 .skill-slider {
   width: 80%;
@@ -333,7 +326,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 75%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -343,6 +336,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+.react-multiple-carousel__arrow::before {
+  color: #9a6fae !important;
+}
+
 
 /************ Projects Css ************/
 .project {
@@ -615,7 +612,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 40%;
 }
 .footer p {
   font-weight: 400;
@@ -623,4 +620,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.Frame3D{ height: 50vh;
+  margin-top: -200px;
+}
+@media (max-width:770px) {
+.Frame3D{
+  margin-top: 0;
+}
+.react-multiple-carousel__arrow--right, .react-multiple-carousel__arrow--left{
+  display: none;
+}
 }
