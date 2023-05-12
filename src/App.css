@@ -15,6 +15,12 @@
 	font-weight: 400;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -92,10 +98,10 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #121212b9;
 }
 nav.navbar a.navbar-brand {
-    width: 156px;
+    width: 258px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -233,7 +239,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 150px 0;
+  padding: 130px 0 150px 0;
   background-image: url('./assets/img/bg-teste.jpeg');
   background-position: top center;
   background-size: cover;
@@ -279,12 +285,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
-  transition: 0.3s ease-in-out;
   line-height: 1;
+  transition: transform 750ms;
+  will-change: transform;
 }
 .banner button:hover svg {
-  margin-left: 25px;
-  color: #f400f8;
+  transform: translateX(20px);
+ /*  color: #9600ff; */
+  filter: drop-shadow(1.5px 2.5px 1px rgba(168, 42, 241, 0.404));
 }
 
 .txt-rotate > .wrap {
@@ -293,6 +301,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .txt-rotate{
   min-height: 400px;
+}
+.hero-image{
+  width: 100%;
+
+  display: block;
 }
 
 /************ Skills Css ************/
@@ -306,7 +319,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -345,7 +357,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  background-color: #080011;
+  box-shadow: 0px -25px 15px -3px #130a1d;
 }
 .project h2 {
 	font-size: 45px;
@@ -390,7 +403,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, #6e25a6 -5.91%, #4A2FBD 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -422,7 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(0deg, #0c0018 -5.91%, #6e25a6 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -467,152 +480,125 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
-.contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+/************ Fedback Css ************/
+.FeedBack {
+  background-color: #080011;
   padding: 60px 0 200px 0;
 }
-.contact img {
-  width: 92%;
-}
-.contact h2 {
-	font-size: 45px;
-	font-weight: 700;
-  margin-bottom: 30px;
-}
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
-}
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
-  content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transition: 0.3s ease-in-out;
-}
-.contact form button:hover::before {
-  width: 100%;
+.container-rating{
+  display: flex;
+  justify-content: space-between;
 }
 
-#blessinho-contact{
-  max-width: 400px ;
+.course,.feedback{
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 35px;
+  margin-top: 25px;
+}
+
+.rating{
+  width: 100%;
+
+}
+
+.rating p{
+  text-align: center;
+  color:#cecece;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.rating-row{
+  display: flex;
+  justify-content: center;
+  background-color: #f5f8ff;
+  padding: 15px;
+  border-radius: 35px;
+  width: auto;
+  color: #121212;
+  max-width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  font-weight: bold;
+}
+
+.rating-row span{
+  margin: 0 10px;
+}
+
+
+
+.rating img{
+  width: 25px;
+}
+
+.vote-count{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.StarRating{
+background-color: #f5f8ff;
+height: 20px;
+width: 80%;
+border-radius: 50px;
+margin: 0 5px;
+}
+
+.StarRating div{
+  height: 20px;
+  background-color: #ffcc47;
+  border-radius: 50px 0 0 50px;
+  width: 0%;
+}
+
+.FiveStarRating{ width: 89% !important}
+.FourStarRating{ width: 11% !important}
+
+
+.neon {
+  text-shadow: rgba(149,0,255,0.9) 0px 0px 31px;
+  font-family: 'Bungee Shade', cursive;
+    font-weight: 900 !important;
+    text-transform: unset !important;
+    letter-spacing: 0px !important;
+    font-size: 38px ;
+    color: #b580f1;
+    max-width: 533px !important;
+    line-height: 55px !important;
+    text-align: center;
+}
+
+
+h3.neon{
+  text-align: center;
+}
+
+.react-multiple-carousel__arrow--right, .react-multiple-carousel__arrow--left{
+  bottom:10px;
+}
+
+.depoimentos{
+  min-height: 200px;
+  font-size: 20px;
+  color:#cecece
 }
 
 /************ Footer Css ************/
 .footer {
   padding: 100px 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.newsletter-bx {
-  background: #FFFFFF;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
-  right: -1px;
-}
-.new-email-bx::after {
-  content: "";
-  background: #fff;
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.new-email-bx input {
-  width: 100%;
-  color: #121212;
-  font-weight: 500;
-  background: transparent;
-  border: 0;
-  padding: 0 15px;
-}
-.new-email-bx button {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 20px 65px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 18px;
+ background-color: #080011;
+ border-top: solid 1px #666;
+
 }
 .footer img {
-  width: 40%;
+  width: 258px;
 }
 .footer p {
   font-weight: 400;
@@ -622,14 +608,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-.Frame3D{ height: 50vh;
-  margin-top: -200px;
-}
+
+
 @media (max-width:770px) {
-.Frame3D{
-  margin-top: 0;
-}
 .react-multiple-carousel__arrow--right, .react-multiple-carousel__arrow--left{
   display: none;
 }
+
+.course .neon{
+  font-size: 28px;
+}
+
+
+
+.footer-logo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+div:has(.show):has(#basic-navbar-nav){
+  background-color: #1f0233;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #12121241;
+}
+
 }

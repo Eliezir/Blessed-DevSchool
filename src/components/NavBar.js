@@ -45,18 +45,18 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Time</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projetos</Nav.Link>
+              <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Serviços</Nav.Link>
+              <Nav.Link href="#feedback" className={activeLink === 'feedback' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>FeedBack</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon2} alt="whatsapp icon" /></a>
+                <a href="https://wa.me/5582988886227" target="_blank" rel="noreferrer"><img src={navIcon2} alt="whatsapp icon" /></a>
                 <a rel="noreferrer" target="_blank" href="https://www.instagram.com/websitesblessed/"><img src={navIcon3} alt="instagram icon" /></a>
                 <a href="mailto:websitesblessed@gmail.com" rel="noreferrer" target="_blank"><img src={navIcon1} alt="gmail icon" /></a>
               </div>
-              <HashLink to='#connect'>
+             {/*  <HashLink to='#connect'>
                 <button className="vvd"><span>Entre em contato!</span></button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>

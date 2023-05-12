@@ -1,7 +1,7 @@
 
 
 import student from "../assets/img/icons/student.svg";
-import stopWatch from "../assets/img/icons/stopwatch.svg";
+import teach from "../assets/img/icons/teach.svg";
 import award  from "../assets/img/icons/award.svg";
 import price  from "../assets/img/icons/prices.svg";
 
@@ -15,7 +15,6 @@ import colorSharp2 from "../assets/img/color-sharp2.png"
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -40,25 +39,25 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Nosso Diferencial</h2>
-                        <p>Motivos para você escolher a blessed!</p>
+                        <p>Motivos para você escolher a Blessed!</p>
                         <Carousel responsive={responsive} infinite={true} 
                          autoPlay={true}
                          autoPlaySpeed={4500}
                         className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={award} alt="Image" />
+                                <img src={award} alt="Image banner alta qualidade" />
                                 <h5>Alta qualidade</h5>
                             </div>
                             <div className="item">
-                                <img src={stopWatch} alt="Image" />
-                                <h5>Prazos flexíveis</h5>
+                                <img src={teach} alt="Image banner prazos flexiveis" />
+                                <h5>Acompanhamento Individualizado</h5>
                             </div>
                             <div className="item">
-                                <img src={price} alt="Image" />
+                                <img src={price} alt="Image banner os melhores preços" />
                                 <h5>Os melhores preços!</h5>
                             </div>
                             <div className="item">
-                                <img src={student} alt="Image" />
+                                <img src={student} alt="Image banner feito por estudantes" />
                                 <h5>Feito por estudantes</h5>
                             </div>
                         </Carousel>

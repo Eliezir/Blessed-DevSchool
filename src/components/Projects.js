@@ -21,8 +21,12 @@ import Logo4 from "../assets/img/ArtesKelvson/Logo04.jpg"
 import Logo5 from "../assets/img/ArtesKelvson/Logo05.jfif"
 import Logo6 from "../assets/img/ArtesKelvson/Logo06.jfif"
 
+import ImgWeb from "../assets/img/ArtesCursos/ImgWEB.png"
+import ImgRN from "../assets/img/ArtesCursos/ImgRN.png"
+import ImgJS from "../assets/img/ArtesCursos/ImgJS.png"
+
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+
 
 export const Projects = () => {
 
@@ -79,36 +83,21 @@ export const Projects = () => {
   ];
   
   
-  const Logotipos = [
+  const Cursos = [
     {
-      title: "Brilho no olhar",
-      description: "Logo Brilho no olhar",
-      imgUrl: Logo1,
+      title: "Introdução à Programação",
+      description: "Curso de introdução a programação com Java Script", 
+      imgUrl: ImgJS,
     },
     {
-      title: "Kekle",
-      description: "Logo Kekle",
-      imgUrl: Logo2,
+      title: "Introdução ao desenvolvimento Web",
+      description: "Curso de introdução ao desenvolvimento Web",
+      imgUrl: ImgWeb,
     },
     {
-      title: "Cartão para loja",
-      description: "Cartão de negócios para lojas",
-      imgUrl: Logo3,
-    },
-    {
-      title: "Depósito do Galego",
-      description: "Logo para deposito de bebidas",
-      imgUrl: Logo4,
-    },
-    {
-      title: "Cristina Cabelos",
-      description: "Logo para salão de beleza",
-      imgUrl: Logo5,
-    },
-    {
-      title: "RK rabisque",
-      description: "Logo para desenhista ",
-      imgUrl: Logo6,
+      title: "Introdução ao React Native",
+      description: "Curso de introdução ao desenvolvimento mobile com React Native",
+      imgUrl: ImgRN,
     },
   ];
 
@@ -119,25 +108,24 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Portfolio</h2>
-                <p>Conheça mais sobre alguns dos nossos outros projetos!</p>
+      
+        
+                <h2>Serviços</h2>
+                <p>Conheça mais sobre alguns dos nossos serviços ofertados!</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">WebSites</Nav.Link>
+                  <Nav.Item>
+                      <Nav.Link eventKey="first">Cursos</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">3D</Nav.Link>
+                      <Nav.Link eventKey="second">WebSites</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Logotipo</Nav.Link>
+                      <Nav.Link eventKey="third">3D</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                  <Tab.Content id="slideInUp">
+                    <Tab.Pane eventKey="second">
                       <Row>
                         {
                           projects.map((project, index) => {
@@ -151,7 +139,7 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    <Tab.Pane eventKey="third">
                     <Row>
                         {
                           Modelagem.map((project, index) => {
@@ -165,10 +153,10 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+                    <Tab.Pane eventKey="first">
                     <Row>
                         {
-                          Logotipos.map((project, index) => {
+                          Cursos.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -181,8 +169,8 @@ export const Projects = () => {
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
-              </div>}
-            </TrackVisibility>
+          
+  
           </Col>
         </Row>
       </Container>
