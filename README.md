@@ -55,7 +55,7 @@ If you're excited about web development and passionate about empowering others, 
 
 Follow us on social media for updates, announcements, and more:
 
-- Instagram: [@WebSitesBlessed](instagram.com/websitesblessed/)
+- Instagram: [@WebSitesBlessed](https://www.instagram.com/websitesblessed/)
 
 Let's make web development an exciting and rewarding journey for everyone! 🌟
 
