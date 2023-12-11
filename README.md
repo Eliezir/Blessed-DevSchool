@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>Blessed WebSites
+  <h1>Blessed-DevSchool
     <img style="height:80px; margin-bottom:-15px" src="src/assets/blessinho.png"/>
   </h1>
 </div>
